@@ -1,4 +1,4 @@
-// const music = require('music.json')
+// const music = require('music.json')nod
 // const technology = 'assets/technology.json'
 // const sports =  'assets/sports.json'
 
@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/api', (req, res) => {
-  console.log(req, 'request')
-  console.log(req.body)
+  // console.log(req, 'request')
+  // console.log(req.body)
   let selection = req.body.category
   console.log(selection)
   switch (Number(selection)) {
