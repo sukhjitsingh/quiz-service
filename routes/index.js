@@ -2,6 +2,7 @@ const music = require('../data/music.json')
 const technology = require('../data/technology.json')
 const sports = require('../data/sports.json')
 
+
 const express = require('express');
 
 var router = express.Router();
@@ -12,8 +13,8 @@ router.get('/', (req, res) => {
 })
 
 router.post('/api', (req, res) => {
-  console.log(req, 'request')
-  console.log(req.body)
+  // console.log(req, 'request')
+  // console.log(req.body)
   let selection = req.body.category
   console.log(selection)
   switch (Number(selection)) {
@@ -38,7 +39,5 @@ router.post('/api', (req, res) => {
 
 
 })
-
-
 
 module.exports = router;
